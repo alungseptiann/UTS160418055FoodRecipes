@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group >
+        <item
+            android:id="@+id/itemResep"
+            android:enabled="true"
+            android:icon="@drawable/ic_baseline_receipt_24"
+            android:title="My Recipes"
+            android:visible="true" />
+        <item
+            android:id="@+id/itemHubungiKami"
+            android:enabled="true"
+            android:icon="@drawable/ic_baseline_mail_24"
+            android:title="Contact Us"
+            android:visible="true" />
+        <item
+            android:id="@+id/itemAbout"
+            android:enabled="true"
+            android:icon="@drawable/ic_baseline_error_24"
+            android:title="About"
+            android:visible="true" />
+        <item
+            android:id="@+id/itemOff"
+            android:enabled="true"
+            android:icon="@drawable/ic_baseline_exit_to_app_24"
+            android:title="Exit" />
+    </group>
+</menu>

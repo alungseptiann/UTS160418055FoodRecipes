@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.AddRecipesFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutbahan"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:hint="Bahan Memasak Anda"
+            app:endIconMode="none"
+            app:hintAnimationEnabled="true"
+            app:hintEnabled="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayoutWaktuMemasak">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editBahan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Bahan Memasak Anda"
+                android:maxLength="9"
+                android:textColor="#0E0D0D" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutLangkahMasak"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:hint="Langkah Memasak Resep"
+            app:endIconMode="none"
+            app:hintEnabled="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayoutbahan">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editLangkahMasak"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Langkah Memasak Resep"
+                android:inputType="none|text"
+                android:maxLength="8"
+                android:textColor="#0C0C0C" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutPhotoUrl"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:hint="PhotoUrResep Anda"
+            app:endIconMode="none"
+            app:hintAnimationEnabled="true"
+            app:hintEnabled="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayoutLangkahMasak">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editPhotoUrl"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:hint="PhotoUrResep Anda"
+                android:inputType="none|text"
+                android:maxLength="8"
+                android:textColor="#1B1A1A" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/textJudul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FOOD RECIPES"
+            android:textAppearance="@style/pagetitleexpanded"
+            android:textColor="#171616"
+            android:textSize="42sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textSub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Tambahkan Resep Kamu Sekarang!"
+            android:textAppearance="@style/pagetitleexpanded"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textJudul" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutJudulResep"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:hint="Judul : Sup Ayam"
+            app:endIconMode="none"
+            app:hintAnimationEnabled="true"
+            app:hintEnabled="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textSub">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editJudul"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Judul : Sup Ayam"
+                android:maxLength="9"
+                android:textColor="#0E0D0D" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutCerita"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:hint="Ceritakan Tentang Resepmu"
+            app:endIconMode="none"
+            app:hintEnabled="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayoutJudulResep">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editCerita"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Ceritakan Tentang Resepmu"
+                android:inputType="none|text"
+                android:maxLength="8"
+                android:textColor="#0C0C0C" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutDaerahAsalResep"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:hint="Daerah Asal Resep Kamu"
+            app:endIconMode="none"
+            app:hintAnimationEnabled="true"
+            app:hintEnabled="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayoutCerita">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editDaerahAsalResep"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:hint="Daerah Asal Resep Kamu"
+                android:inputType="none|text"
+                android:maxLength="8"
+                android:textColor="#1B1A1A" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutPorsi"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:hint="Porsi : 2 Orang"
+            app:endIconMode="none"
+            app:hintAnimationEnabled="true"
+            app:hintEnabled="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayoutDaerahAsalResep">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editPorsi"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Porsi : 2 Orang"
+                android:textColor="#151414" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutWaktuMemasak"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:hint="Waktu Memasak : 30 Menit"
+            app:endIconMode="none"
+            app:hintAnimationEnabled="true"
+            app:hintEnabled="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayoutPorsi">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editWaktuMemasak"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Waktu Memasak : 30 Menit"
+                android:textColor="#131313" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnAddRecipes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:text="ADD RECIPES"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayoutPhotoUrl" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
