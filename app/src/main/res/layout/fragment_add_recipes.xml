@@ -29,7 +29,6 @@
                 android:id="@+id/editBahan"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:hint="Bahan Memasak Anda"
                 android:maxLength="9"
                 android:textColor="#0E0D0D" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -53,7 +52,6 @@
                 android:id="@+id/editLangkahMasak"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:hint="Langkah Memasak Resep"
                 android:inputType="none|text"
                 android:maxLength="8"
                 android:textColor="#0C0C0C" />
@@ -80,7 +78,6 @@
                 android:id="@+id/editPhotoUrl"
                 android:layout_width="match_parent"
                 android:layout_height="58dp"
-                android:hint="PhotoUrResep Anda"
                 android:inputType="none|text"
                 android:maxLength="8"
                 android:textColor="#1B1A1A" />
@@ -131,7 +128,6 @@
                 android:id="@+id/editJudul"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:hint="Judul : Sup Ayam"
                 android:maxLength="9"
                 android:textColor="#0E0D0D" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -155,7 +151,6 @@
                 android:id="@+id/editCerita"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:hint="Ceritakan Tentang Resepmu"
                 android:inputType="none|text"
                 android:maxLength="8"
                 android:textColor="#0C0C0C" />
@@ -182,7 +177,6 @@
                 android:id="@+id/editDaerahAsalResep"
                 android:layout_width="match_parent"
                 android:layout_height="58dp"
-                android:hint="Daerah Asal Resep Kamu"
                 android:inputType="none|text"
                 android:maxLength="8"
                 android:textColor="#1B1A1A" />
@@ -208,7 +202,6 @@
                 android:id="@+id/editPorsi"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:hint="Porsi : 2 Orang"
                 android:textColor="#151414" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -232,7 +225,6 @@
                 android:id="@+id/editWaktuMemasak"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:hint="Waktu Memasak : 30 Menit"
                 android:textColor="#131313" />
         </com.google.android.material.textfield.TextInputLayout>
 
