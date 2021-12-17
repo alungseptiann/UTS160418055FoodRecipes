@@ -52,6 +52,9 @@
             android:name="langkahMemasak"
             app:argType="string"
             app:nullable="true" />
+        <argument
+            android:name="uuid"
+            app:argType="integer" />
     </fragment>
     <fragment
         android:id="@+id/itemAdd"
